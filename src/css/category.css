@@ -1,0 +1,73 @@
+.mb20 {
+    margin-bottom: 20px;
+}
+
+input {
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
+
+.title {
+    font-weight: bold;
+}
+
+select {
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
+
+textarea {
+    margin-top: 5px;
+}
+
+.button {
+    background-color: rgba(255, 255, 255, 0.25);
+    border-radius: 10px;
+    border: 4px rgba(0, 0, 0, 0.85);
+    font-size: 25px;
+    color: rgb(0, 0, 0);
+    width: 300px;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: rgba(255, 255, 255, 0.87);
+    color: black;
+}
+
+.box {
+    width: 20rem;
+    border-radius: 20px;
+    text-align: center;
+    backdrop-filter: blur(10px);
+    background-color: rgba(255, 255, 255, 0.23);
+}
+
+select {
+    width: 20rem;
+    height: 2rem;
+    border-radius: 10px;
+}
+
+.smallBox {
+    width: 20rem;
+    height: 1.8rem;
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    background-color: rgba(255, 255, 255, 0.23);
+}
+
+.dropdown1 {
+    width: 20rem;
+    height: 1.8rem;
+    border: 1px solid rgb(0, 0, 0);
+    font-size: 14px;
+    color: #000000;
+    backdrop-filter: blur(10px);
+    background-color: rgba(255, 255, 255, 0.23);
+    border-radius: 10px;
+}

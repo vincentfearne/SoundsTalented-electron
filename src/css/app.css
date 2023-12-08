@@ -1,0 +1,47 @@
+@import './home.css';
+@import './menu.css';
+@import 'category.css';
+@import 'product.css';
+@import 'productHome.css';
+
+body {
+    background-image: url('/public/cyber2.png') ;
+}
+
+hr {
+    height: 10px;
+    background-color: rgba(0, 0, 0, 0.22);
+    border: none;
+
+}
+
+tr, th {
+    border: 1px solid#000000;
+    padding: 1rem;
+    width: 40em;
+    border-radius: 10px;
+}
+
+thead, tfoot {
+    background-color: rgba(255, 255, 255, 0.46);
+    color: #000000;
+    border-radius: 10px;
+}
+
+.bordered {
+    border: 4px solid rgba(255, 255, 255, 0.74);
+    margin-bottom: 1px;
+    background-color: rgba(255, 255, 255, 0.35);
+}
+
+table {
+    padding: 1rem;
+    width: 40em;
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+}
+
+tbody {
+    border-radius: 10px;
+}
+

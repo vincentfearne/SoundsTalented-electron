@@ -1,0 +1,13 @@
+
+.centered-element {
+    margin-left: auto;
+    margin-right: auto;
+    padding: 40px;
+    width: 250px;
+}
+
+.centered {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
