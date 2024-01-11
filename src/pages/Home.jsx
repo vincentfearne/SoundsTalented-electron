@@ -25,7 +25,7 @@ function Home () {
                 <div className="centered-element">
                     <h1 className="centered">List</h1>
                     <br/>
-                    <table>
+                    <table className="centered">
                         <thead>
                         <tr>
                             <th>Nom</th>

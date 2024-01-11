@@ -35,13 +35,12 @@ export default function ProductAdd() {
 
 
     const handleClick = () => {
-        console.log("proCat value:", proCat);
         fetch("http://127.0.0.1:8000/api/produits", {
             method: "POST",
             headers: {
                 'Content-Type': 'application/json'
             },
-            body: JSON.stringify({cat : proCat, proLibelle: proName, proPrix: parseFloat(proPrice), proRef :proRef, fou_id: proSup, proDescription: proDescription, proPhoto: proPicture})
+            body: JSON.stringify({cat : "/api/categories/" + proCat, proLibelle: proName, proPrix: parseFloat(proPrice), proRef :proRef, fou: "/api/fournisseurs/" + proSup, proDescription: proDescription, proPhoto: proPicture})
         })
             .then((reponse)=>{ console.log(reponse) })
     }
@@ -92,10 +91,11 @@ export default function ProductAdd() {
 
 
     return (
-        <div className="global">
+        <div className="global centered">
 
-            <div className="gauche blur">
-                <div className="centered-element">
+
+                <div className="centered mt20">
+                    <br />
                     <h1 className="centered mb20">Add a product</h1>
                     {/*<form className="centered">*/}
                         <label htmlFor="techno-name" className="title">Name :</label>
@@ -135,54 +135,20 @@ export default function ProductAdd() {
                             }
                         </select>
                         <br/>
-                        <label htmlFor="techno-description" className="title">Description :</label>
+                        <label htmlFor="techno-description" className="title">Description :</label><br />
                         <textarea name="techno-description" id="techno-description" cols="15" rows="5" className="box" value={proDescription} onChange={handleChangeProDescription}/>
                         <br /><br />
-                        <label htmlFor="catPic" className="title">Insérez une image</label>
-                        <input type="file" name="catPic" id="catPic" value={proPicture} onChange={handleChangeProPicture}/>
-                        <button onClick={handleClick}>ADD PRODUCT</button>
+
+
+                        <label htmlFor="catPic" className="title custom-file-upload">Insert picture</label><br />
+                        <input type="file" name="catPic" id="catPic" value={proPicture} onChange={handleChangeProPicture}/><br /><br />
+
+
+                        <button onClick={handleClick} className="button">ADD PRODUCT</button>
                     {/*</form>*/}
                 </div>
-            </div>
-            <div className="droite">
-                <div className="centered-element">
-                <h1 className="centered">List</h1>
-                <br />
-                <table>
-                    <thead>
-                    <tr>
-                        <th>Nom</th>
-                        <th>Prix</th>
-                    </tr>
-                    </thead>
-                    <tbody>
-                    <tr>
-                        <td>
-                            {
-                                list.map((produit) => (
-                                    <div key={produit.id} className="centered bordered">
-                                        {produit.proLibelle}
-                                    </div>
-                                ))
-                            }
-                        </td>
-                        <td>
-                            {
-                                list.map((produit) => (
-                                    <div key={produit.id} className="centered bordered">
-                                        {produit.proPrix}
-                                    </div>
-                                ))
-                            }
-                        </td>
-                    </tr>
-                    </tbody>
-                </table>
-                <br />
-                <br />
-                </div>
 
-            </div>
+
         </div>
     )
 }

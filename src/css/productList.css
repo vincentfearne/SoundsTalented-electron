@@ -1,0 +1,15 @@
+.white {
+    background-color: rgba(255, 255, 255, 0.41);
+}
+
+.large {
+    width: 700px;
+}
+
+.medium {
+    width: 300px;
+}
+
+.black {
+    color: black;
+}

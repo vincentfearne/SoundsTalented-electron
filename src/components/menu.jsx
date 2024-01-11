@@ -10,14 +10,12 @@ export default function Menu() {
                         <li><NavLink to="/"
                                      className={({isActive}) => (isActive ? "activeLink" : undefined)}>Home</NavLink>
                         </li>
-                        <li><NavLink to="/add"
+                        <li><NavLink to="/category"
                                      className={({isActive}) => (isActive ? "activeLink" : undefined)}>Category</NavLink>
                         </li>
+
                         <li><NavLink to="/product"
                                      className={({isActive}) => (isActive ? "activeLink" : undefined)}>Product</NavLink>
-                        </li>
-                        <li><NavLink to="/producthome"
-                                     className={({isActive}) => (isActive ? "activeLink" : undefined)}>ProductMenu</NavLink>
                         </li>
                     </ul>
                     <br/>
@@ -25,8 +23,8 @@ export default function Menu() {
                 <br/>
                 <br/>
                 <br/>
-                <br />
-                <hr />
+
+
             </div>
             )
 }

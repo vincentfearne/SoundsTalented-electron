@@ -4,7 +4,11 @@ import './css/app.css';
 import Category from "./pages/Category";
 import ProductAdd from "./pages/ProductAdd";
 import { Routes, Route } from 'react-router-dom';
-import ProductHome from "@/pages/ProductHome";
+import Product from "@/pages/Product";
+import ProductList from "@/pages/ProductList";
+import ProductDetail from "@/pages/ProductDetail";
+import CategoryAdd from "@/pages/CategoryAdd";
+import CategoryList from "@/pages/CategoryList";
 
 
 
@@ -14,9 +18,13 @@ function App() {
                     <Menu />
                     <Routes>
                         <Route path="/" element={<Home />} />
-                        <Route path="/add" element={<Category />} />
-                        <Route path="/product" element={<ProductAdd />} />
-                        <Route path="/producthome" element={<ProductHome />} />
+                        <Route path="/category" element={<Category />} />
+                        <Route path="/productadd" element={<ProductAdd />} />
+                        <Route path="/product" element={<Product />} />
+                        <Route path="/productlist" element={<ProductList />} />
+                        <Route path="/productdetail/:id" element={<ProductDetail />} />
+                        <Route path="/categoryadd" element={<CategoryAdd />} />
+                        <Route path="/categorylist" element={<CategoryList />} />
                     </Routes>
                 </>
             </div>

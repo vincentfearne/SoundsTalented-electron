@@ -1,8 +1,8 @@
 .card {
     box-sizing: border-box;
-    width: 190px;
-    height: 254px;
-    background: rgba(217, 217, 217, 0.58);
+    width: 500px;
+    height: 650px;
+    background: rgba(255, 255, 255, 0.15);
     border: 1px solid white;
     box-shadow: 12px 17px 51px rgba(0, 0, 0, 0.22);
     backdrop-filter: blur(6px);
@@ -29,6 +29,9 @@
 
 .flex {
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
+}
 
+.cardtext {
+    font-size: 50px;
 }
